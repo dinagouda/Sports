@@ -1,0 +1,309 @@
+
+/* General*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  background-color: #222222;
+}
+
+a {
+  color: #5cb874;
+}
+
+a:hover {
+  color: #80c792;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+  }
+
+
+
+/*Top Bar*/
+#topbar {
+  background: #fbfbfb;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #444444;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  color: #5cb874;
+}
+
+#topbar .contact-info i {
+  color: #5cb874;
+  padding-right: 4px;
+}
+
+#topbar .contact-info i.icofont-phone {
+  margin-left: 15px;
+}
+
+#topbar .social-links a {
+  color: #777777;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #5cb874;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+
+
+/*# slider Section*/
+
+
+
+.nav-bar {
+	width: 100%;
+	position: fixed;
+	height:auto;
+	z-index: 999;
+	top: 40px;
+	font-size: 18px;
+  background-color: #484646;
+}
+.nav-bar li:last-child {
+	margin-right: 60px;
+}
+a {
+	text-decoration: none;
+	color:inherit;
+}
+nav ul {
+	overflow: hidden;
+	text-align:right;
+	margin-left: 0;
+}
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	padding: 8px 15px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+ nav a:hover {
+	color: #70B8FF;
+}
+/* Mobile navigation */
+.mobile-icon {
+	width: 100%;
+	text-align: right;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+	font-size: 20px;
+	font-family: bold;
+	margin: 2% 2%;
+	position: relative;
+	padding-left: 1.25em;
+}
+/* style of mobile icron */
+.mobile-icon:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.2em;
+	width: 1.2em;
+	height: 0.16em;
+	background: white;
+	box-shadow: 0 0.35em 0 0 white, 0 0.7em 0 0 white;
+}     
+/* end */
+
+.active{
+  color: green;
+}
+
+@media screen and (max-width: 943px) {
+	
+		.mobile-icon {
+			display: block;
+		}
+
+		nav ul {
+			max-height: 0px;
+			padding: 0px;
+		}
+		
+		/* mobile nav  */
+		.showing {
+			max-height: 20em;
+			padding-bottom: 10px;
+			font-size: 18px;
+		}
+		/* end */
+
+		.nav-bar {
+			width:100%;
+			background-color: #222;
+		}
+
+		nav ul li {
+			box-sizing: border-box;
+			width: 100%;
+			text-align: center;
+		}
+		
+		nav ul li:hover {
+			background-color: #fff;
+			width: 100%;
+        color: #70B8FF;
+		}
+
+		.nav-bar {
+			display: block;
+		}
+}
+
+
+
+/*# Sections General*/
+section{
+  margin-bottom: 4vh;
+}
+
+
+/* banner section */
+#bann  .banner{
+  width: 100%;
+  margin-top: 12vh;
+}
+
+/* cards section */
+
+#cards{
+  padding: 0px 2vh;
+}
+#cards .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#cards .card {
+ 
+  background-image: linear-gradient(to right, rgb(100, 245, 52) , rgb(8, 153, 73));
+
+  border-radius: 5px;
+  padding: 2vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+#cards .card img {
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+#cards .flagimg{
+  width: 100%;
+    height: 100% i !important;
+    border-radius: 50%;
+}
+
+#cards .card h3 {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 943px) {
+	#cards .hidephone{
+		display: none;
+	}
+}
+
+/* news section */
+#news{
+	background-color: #484646;
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: right;
+    border-radius: 3px;
+}
+.listviews{
+	display: flex;
+	justify-content: center;
+}
+.innertexts{
+	text-align: center;
+    font-size: .9rem;
+    color: rgb(191 195 191);
+}
+
+/* studio section */
+
+#studio{
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: right;
+    margin: 0px 2vh;
+    border-radius: 3px;
+    padding: 0px 12px;
+	margin-top: 6vh;
+}
+
+#studio .card{
+	background-color: #484646;
+	color: aliceblue;
+}
+#studio .card-body{
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 943px) {
+	#studio	.cardhidden{
+		display: none
+	}
+}
+
+
+
+
+/* section result */
+#result{
+	margin: 6vh ;
+}
+#result .headertext{
+	justify-content: center;
+    font-size: 1rem;
+    font-weight: 800;
+}
+#result .head{
+	justify-content: center;
+    font-size: 1.4rem;
+    color: #008012;
+}
+#result .lastrow{
+	text-align: center;
+    color: #297748;
+    font-size: 1.3rem;
+}
